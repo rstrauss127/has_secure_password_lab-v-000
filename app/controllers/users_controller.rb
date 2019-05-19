@@ -10,6 +10,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def welcome 
+  end
+
   private
   def users_params
     params.require(:user).permit(:name, :password, :password_confirmation)
